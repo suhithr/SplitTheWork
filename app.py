@@ -59,6 +59,7 @@ def on_edited(message):
     if doc is not None:
         print "Adding : " + data_now + " : to the database"
         doc.data = data_now
+        db.session.commit()
     #Sending the changes to everybody
     emit('update', {'data': data_now}, broadcast=True)
 
