@@ -1,7 +1,6 @@
 function updateDocument(receivedData) {
-    console.log("fired");
+    console.log("Updating in browser");
     $("#documentText").val(receivedData);
-    $('#documentText').trigger('keyup');
 }
 
 $(document).ready(function() {

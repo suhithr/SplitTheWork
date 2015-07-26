@@ -4,6 +4,15 @@ from flask.ext.socketio import SocketIO, emit, send, join_room, leave_room
 import gevent
 
 from forms import *
+'''
+NOTES:
+#This time using namespace /doc for the document part
+#Maybe use /chat for chat part if it ever gets added
+TODO:
+#Make is save the doc and update immediately
+#Allow for titles and for rooms
+#
+'''
 
 app = Flask(__name__)
 app.config.from_object('config.DevelopmentConfig')
