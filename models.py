@@ -7,7 +7,9 @@ class DocumentTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     room = db.Column(db.String, nullable=False)
     data = db.Column(db.Text, nullable=True)
+    field = db.Column(db.Text, nullable=False)
 
-    def __init__(self, room, data):
+    def __init__(self, room, data, field):
         self.room = room
         self.data = data
+        self.field = field

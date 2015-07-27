@@ -15,14 +15,8 @@
         <title>Document Editor</title>
     </head>
     <body>
-        <form action="" method="post">
-            {{ form.csrf_token }}
-            <div id="title">
-                {{ form.title }}
-            </div>
-            <div>
-                {{ form.data(cols="80", rows="40",id="documentText") }}
-            </div>
+        <form action="" method="get">
+            <input type="number" id="pickFields" min=1 default=1></input>
         </form>
     </body>
 </html>

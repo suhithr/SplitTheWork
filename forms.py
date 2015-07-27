@@ -6,4 +6,5 @@ from wtforms.widgets import TextArea
 
 class DocumentForm(Form):
     title = TextField('title', validators=[DataRequired()])
-    data = TextField('data', widget=TextArea())
+    firstdata = TextField('firstdata', widget=TextArea())
+    seconddata = TextField('seconddata', widget=TextArea())
